@@ -36,6 +36,7 @@ target_sources(F_S_Saturation PRIVATE
     Source/PluginEditor.h
     Source/PluginEditor.cpp
     Source/DSP/SaturationEngine.h
+    Source/GUI/FS_LookAndFeel.h
 )
 
 target_link_libraries(F_S_Saturation PRIVATE
