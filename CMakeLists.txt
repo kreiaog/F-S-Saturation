@@ -16,7 +16,6 @@ FetchContent_Declare(
 
 FetchContent_MakeAvailable(JUCE)
 
-# Оголошуємо аудіоплагін
 juce_add_plugin(F_S_Saturation
     COMPANY_NAME "KreiaDSP"
     IS_SYNTH FALSE
