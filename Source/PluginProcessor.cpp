@@ -13,6 +13,7 @@ FS_SaturationAudioProcessor::FS_SaturationAudioProcessor()
 
 void FS_SaturationAudioProcessor::prepareToPlay(double sampleRate, int samplesPerBlock) {
     juce::ignoreUnused(sampleRate, samplesPerBlock);
+    saturator.prepare(sampleRate);
 }
 
 void FS_SaturationAudioProcessor::releaseResources() {}
