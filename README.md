@@ -38,8 +38,7 @@ cmake --build build --config Release
 
 ## Authors
 
-ex. Vasyl Havryliuk  
-ex. [@kreiaog](https://www.instagram.com/kreiaog/)
+ Vasyl Havryliuk - [@kreiaog](https://www.instagram.com/kreiaog/)
 
 ## Version History
 
