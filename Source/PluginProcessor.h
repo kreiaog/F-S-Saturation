@@ -1,5 +1,6 @@
 #pragma once
 #include <juce_audio_processors/juce_audio_processors.h>
+#include <juce_dsp/juce_dsp.h>
 
 #include "DSP/SaturationEngine.h"
 
@@ -38,10 +39,18 @@ private:
     AudioProcessorValueTreeState apvts;
     AudioProcessorValueTreeState::ParameterLayout createParameterLayout();
 
+    double currentSampleRate = 44100.0;
+
     SaturationEngine saturator;
 
     atomic<float> *driveParameter = nullptr;
     atomic<float> *mixParameter = nullptr;
+
+    int oversamplingNums = 0;
+    unique_ptr<dsp::Oversampling<float>> oversampling2x;
+    unique_ptr<dsp::Oversampling<float>> oversampling4x;
+    atomic<float> *oversamplingParameter = nullptr;
+    int lastOversamplingChoice = 0;
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(FS_SaturationAudioProcessor)
 };

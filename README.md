@@ -38,16 +38,18 @@ cmake --build build --config Release
 
 ## Authors
 
- Vasyl Havryliuk - [@kreiaog](https://www.instagram.com/kreiaog/)
+Vasyl Havryliuk - [@kreiaog](https://www.instagram.com/kreiaog/)
 
 ## Version History
 
 * 0.1
     * The project created and added core functionality.
-    * See [commit change]() or See [release history]().
 * 0.2
     * Release version. Fixed bugs and optimized
-    * See [commit change]() or See [release history]().
+* 0.3
+    * Added Oversampling
+
+See [commit change]() or See [release history]().
 
 ## License
 

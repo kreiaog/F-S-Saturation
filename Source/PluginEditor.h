@@ -28,5 +28,9 @@ private:
     Slider mixSlider;
     unique_ptr<SliderAttachment> mixAttachment;
 
+    Label oversamplingLabel;
+    ComboBox oversamplingBox;
+    unique_ptr<AudioProcessorValueTreeState::ComboBoxAttachment> oversamplingAttachment;
+
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(FS_SaturationAudioProcessorEditor)
 };
